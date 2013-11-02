@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+body{
+	color: DarkGreen;
+	background-color: Khaki;
+	font-family: Trebuchet MS,Verdana;
+}
+
+.baslik{
+	color: DarkSlateGray;
+	font-size: x-large;
+	font-weight: bold;
+	border-style: groove;
+	border-color: Bisque;
+	border-width: thin
+}
+
+.icerik{
+	color: FireBrick;
+	font-style: italic;
+	font-size: medium;
+	font-weight: lighter
+}

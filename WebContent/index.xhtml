@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<link href="./css/styles.css" rel="stylesheet" type="text/css"/>
+</h:head>
+<h:body>
+<p:fieldset legend="Takip Uygulama">
+	<h:form>
+	<p:messages></p:messages>
+		<h3 class="icerik">Başlangıç Tarihi:</h3><p:calendar value="#{sayiBean.tarih}" required="true" requiredMessage="Başlangıç tarihi girilmeli"></p:calendar> <br />
+		<h3 class="icerik">Bitiş Tarihi:</h3><p:calendar value="#{sayiBean.bTarih}" required="true" requiredMessage="Bitiş tarihi girilmeli"></p:calendar> <br />
+		<p:commandButton action="#{sayiBean.yonlendir}" ajax="false" value="Kaydet"></p:commandButton>
+	</h:form>
+</p:fieldset>
+</h:body>
+</html>
